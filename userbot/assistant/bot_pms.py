@@ -82,7 +82,7 @@ async def bot_start(event):
                     \n\nPowered by [Catuserbot](https://t.me/catuserbot17)"
         buttons = [
             (
-                Button.url("Repo", "https://github.com/sandy1709/catuserbot"),
+                Button.url("Repo", "https://github.com/AUTOBOTS00/catuserbot"),
                 Button.url(
                     "Deploy",
                     "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack&template=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack",
@@ -90,7 +90,7 @@ async def bot_start(event):
             )
         ]
     else:
-        start_msg = "Hey Master!\
+        start_msg = "Hey BOSS 😊!\
             \nHow can i help you ?"
         buttons = None
     try:
@@ -274,7 +274,7 @@ async def bot_start(event):
     users = get_user_id(reply_to)
     if users is None:
         return await info_msg.edit(
-            "**ERROR:** \n`Sorry !, Can't Find this user in my database :(`"
+            "**ERROR:** \n`Sorry BOSS !, Can't Find this user in my database :(`"
         )
     for usr in users:
         user_id = int(usr.chat_id)
@@ -282,7 +282,7 @@ async def bot_start(event):
         break
     if user_id is None:
         return await info_msg.edit(
-            "**ERROR:** \n`Sorry !, Can't Find this user in my database :(`"
+            "**ERROR:** \n`Sorry BOSS !, Can't Find this user in my database :(`"
         )
     uinfo = f"This message was sent by 👤 {_format.mentionuser(user_name , user_id)}\
             \n**First Name:** {user_name}\
